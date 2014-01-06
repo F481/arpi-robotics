@@ -1,3 +1,0 @@
-[submodule "app/static/js/virtualjoystick"]
-	path = app/static/js/virtualjoystick
-	url = git://github.com/bes89/virtualjoystick.js.git
