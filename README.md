@@ -18,7 +18,7 @@ It provides several robot models based on the Arduino and Raspberry Pi.
 ### Step 1: Checkout the project locally
 
 ```bash
-git clone git@github.com:arpi-robotics/arpi-robotics.git
+git clone https://github.com/arpi-robotics/arpi-robotics.git
 ```
 
 ### Step 2: Get your Arduino ready
@@ -35,12 +35,13 @@ The Arduino is now ready.
 ssh to your raspi and then:
 
 ```bash
-git clone git@github.com:arpi-robotics/arpi-robotics.git
-cd pi-rover/
-virtualenv-2.7 venv
+sudo aptitude install python-virtualenv python-dev
+git clone https://github.com/arpi-robotics/arpi-robotics.git
+cd arpi-robotics/
+virtualenv venv
 source venv/bin/activate
-./venv/bin/pip-2.7 install -r requirements.txt
-./venv/bin/python2.7 runserver.py
+./venv/bin/pip install -r requirements.txt
+./venv/bin/python runserver.py
 ```
 
 Open this in browser:
