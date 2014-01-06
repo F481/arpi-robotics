@@ -22,16 +22,11 @@ git clone git@github.com:arpi-robotics/arpi-robotics.git
 ```
 
 ### Step 2: Get your Arduino ready
+The setup of the arduino is model specific, so take a look under the docs folder.
+- [Arduino setup for ARPi-Rover](https://github.com/arpi-robotics/arpi-robotics/blob/master/docs/arpi-rover.md#get-your-arduino-ready)
 
-After you checked out the project locally install these two dependencies:
 
-```bash
-mkdir ~/sketchbook/libraries
-git clone https://github.com/adafruit/Adafruit-Motor-Shield-library
-git clone https://github.com/fmbfla/Arduino.git
-```
-
-Then open the arduino/pi_rover/pi_rover.ino in your Arduino IDE and upload it to your Arduino.
+Then open the arduino/<model type>/<model type>.ino in your Arduino IDE and upload it to your Arduino.
 
 The Arduino is now ready.
 
