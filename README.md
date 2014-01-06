@@ -1,7 +1,7 @@
-# PiRover
+# ARPi-Robotics
 
-The PiRover itself is a robot based on the Raspberry Pi and Arduino UNO.
-This repository provides a ready-to-use micro-framework based on Python, C++, JavaScript and HTML5.
+ARPi-Robotics itself is a ready-to-use micro-framework based on Python, C++, JavaScript and HTML5.  
+It provides several robot models based on the Arduino and Raspberry Pi.
 
 ## Features
 
@@ -10,30 +10,15 @@ This repository provides a ready-to-use micro-framework based on Python, C++, Ja
 * Video streaming in real time (up to 1080p@30fps - yes, its full hd!)
 * Based on arch linux - no limits
 
-## Required Hardware
-
-* Raspberry Pi with the Camera Module
-* USB Power Bank: Choose carefully! It should provide a 5V 2A or at least 1.5A usb out to power up the Raspberry Pi.
-The Raspberry Pi needs a lot of current for the camera module, wifi, and arduino is also powered by the Raspberry Pi
-that's why choose a powerbank with at least 5000mAh! Ideally it has some status led so we can read the battery life with a photo resistor.
-* Photo resistor + 10k Resistor: To read the battery life of your powerbank
-* micro usb cable 0.6ft: To connect the powerbank with Rapsberry Pi
-* usb A-to-B cable 0.6ft: To connect the Raspberry Pi with the Arduino
-* Arduino Uno or Mega
-* Motor Shield (for example: Adafruit: http://www.adafruit.com/products/81)
-* LiPo Battery (for example: Hacker LiPo Akku 11.1 V / 1800 mAh (30 C))
-* Chassis with DC Motors and wheels: just google "robot chassis 4wd"
-* Servo Motor: for a 180° view
-* UltraSonic Range Finder: to measure distance
-* one LED: to use it as a status led
-* some wire
+## Supported robot models
+- [ARPi-Rover](docs/arpi-rover.md)
 
 ## How to install
 
 ### Step 1: Checkout the project locally
 
 ```bash
-git clone git@github.com:bes89/pi-rover.git
+git clone git@github.com:arpi-robotics/arpi-robotics.git
 ```
 
 ### Step 2: Get your Arduino ready
@@ -55,7 +40,7 @@ The Arduino is now ready.
 ssh to your raspi and then:
 
 ```bash
-git clone git@github.com:bes89/pi-rover.git
+git clone git@github.com:arpi-robotics/arpi-robotics.git
 cd pi-rover/
 virtualenv-2.7 venv
 source venv/bin/activate
