@@ -1,38 +1,13 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="infoPanel">
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a href="#" class="brand">PiRover</a>
-                    <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li>
-                            <a href="#">
-                                <div id="inputFeedback"></div>
-                                <div id="serverFeedback"></div>
-                            </a>
-                        </li>
-                    </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="mainPanel" style="position: relative">
-        <div id="videoStream" style="position: absolute">
+    <div class="mainPanel" style="">
+        <div id="videoStream" style="">
             <video id="liveStream" poster preload="true">
                 <source src="#" type="video/mp4">
             </video>
         </div>
-        <div id="joystick" style="position: absolute;">
+        <div id="joystick" style="margin-top: 70px; height: 700px">
         </div>
     </div>
 
