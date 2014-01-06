@@ -31,13 +31,6 @@ var PiRover	= function(options) {
             this.log("WebSocket are not supported by your browsers but required to communicate with the rover..");
         }
 
-        // Cleanly close websocket when unload window
-        window.onbeforeunload = function () {
-            self.websocket.onclose = function () {
-            }; // disable onclose handler first
-            self.websocket.close()
-        };
-
         this.joystick = new VirtualJoystick({
             container	: document.getElementById('joystick'),
             mouseSupport	: true
