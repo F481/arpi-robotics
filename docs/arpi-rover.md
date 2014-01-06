@@ -25,7 +25,7 @@ After you checked out the project locally install these two dependencies:
 
 ```bash
 mkdir ~/sketchbook/libraries && cd ~/sketchbook/libraries
-git clone https://github.com/adafruit/Adafruit-Motor-Shield-library
+git clone https://github.com/adafruit/Adafruit-Motor-Shield-library && mv Adafruit-Motor-Shield-library/ AF_Motor_Shield
 wget https://arduino-new-ping.googlecode.com/files/NewPing_v1.5.zip && unzip NewPing_v1.5.zip
 ```
 (if wget and unzip isn't installed you can manually download and unzip the NewPing.zip archive to ~/sketchbook/libraries)
