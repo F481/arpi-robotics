@@ -35,13 +35,13 @@ The Arduino is now ready.
 ssh to your raspi and then:
 
 ```bash
-sudo aptitude install python-virtualenv
+sudo aptitude install python-virtualenv python-dev
 git clone https://github.com/arpi-robotics/arpi-robotics.git
 cd arpi-robotics/
-virtualenv-2.7 venv
+virtualenv venv
 source venv/bin/activate
-./venv/bin/pip-2.7 install -r requirements.txt
-./venv/bin/python2.7 runserver.py
+./venv/bin/pip install -r requirements.txt
+./venv/bin/python runserver.py
 ```
 
 Open this in browser:
