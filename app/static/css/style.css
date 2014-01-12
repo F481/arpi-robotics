@@ -2,18 +2,22 @@ html, body {
     padding: 0;
     margin: 0;
 }
+.panelContainer {
+    height: 100%;
+}
 .infoPanel {
 }
 .mainPanel {
     background-color: #000000;
-    position: relative;
-    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     width:100%;
-    height:90%;
+    height:100%;
 }
 #joystick, #videoStream {
     top: 0;
-    height: 95%;
+    height: 100%;
     position: absolute;
 }
 #joystick {
@@ -21,8 +25,8 @@ html, body {
     position: absolute;
 }
 .controlPanel {
-    position: relative;
-    top: -50px;
+    position: absolute;
+    bottom: 0;
     z-index: 3;
     padding: 0 2%;
     width: 96%;
