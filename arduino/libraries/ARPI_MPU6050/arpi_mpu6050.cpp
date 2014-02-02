@@ -1,3 +1,5 @@
+#define MPU6050_INCLUDE_DMP_MOTIONAPPS20
+
 #include "arpi_mpu6050.h"
 
 // class default I2C address is 0x68

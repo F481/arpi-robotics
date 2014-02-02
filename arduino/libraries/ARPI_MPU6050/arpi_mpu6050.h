@@ -41,6 +41,9 @@ THE SOFTWARE.
 ===============================================
 */
 
+#define MPU6050_INCLUDE_DMP_MOTIONAPPS20
+
+#include <helper_3dmath.h>
 
 #ifndef ARPI_MPU6050_h
 #define ARPI_MPU6050_h
