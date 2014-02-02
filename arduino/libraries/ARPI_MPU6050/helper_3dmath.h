@@ -29,8 +29,6 @@ THE SOFTWARE.
 ===============================================
 */
 
-#include <Arduino.h> 
-
 #ifndef _HELPER_3DMATH_H_
 #define _HELPER_3DMATH_H_
 

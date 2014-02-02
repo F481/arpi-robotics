@@ -43,8 +43,6 @@ THE SOFTWARE.
 
 #define MPU6050_INCLUDE_DMP_MOTIONAPPS20
 
-#include <helper_3dmath.h>
-
 #ifndef ARPI_MPU6050_h
 #define ARPI_MPU6050_h
 
@@ -54,6 +52,8 @@ THE SOFTWARE.
 	#include <WProgram.h>
 	#include <pins_arduino.h>
 #endif
+
+#include <helper_3dmath.h>
 
 // I2Cdev and MPU6050 must be installed as libraries, or else the .cpp/.h files
 // for both classes must be in the include path of your project
