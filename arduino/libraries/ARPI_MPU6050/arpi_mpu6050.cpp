@@ -48,7 +48,7 @@ void dmpDataReady() {
 // ===                      INITIAL SETUP                       ===
 // ================================================================
 
-int setupMPU6050() {
+int ARPI_MPU6050::setup() {
     // join I2C bus (I2Cdev library doesn't do this automatically)
     #if I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE
         Wire.begin();
@@ -130,7 +130,7 @@ int setupMPU6050() {
 // ===                    MAIN PROGRAM LOOP                     ===
 // ================================================================
 
-void loop() {
+void ARPI_MPU6050::run() {
     // if programming failed, don't try to do anything
     if (!dmpReady) return;
 
