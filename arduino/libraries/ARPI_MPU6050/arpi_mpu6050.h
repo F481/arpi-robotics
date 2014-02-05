@@ -24,7 +24,7 @@
    class ARPI_MPU6050 {
    	public:
    		int setup();
-   		void run();
+   		void run(float orig[]);
    };
 
 #endif
