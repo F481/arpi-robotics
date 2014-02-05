@@ -8,6 +8,7 @@
 // AD0 high = 0x69
 MPU6050 mpu;
 //MPU6050 mpu(0x69); // <-- use for AD0 high
+
 bool blinkState = false;
 
 // MPU control/status vars
@@ -27,28 +28,17 @@ VectorFloat gravity;    // [x, y, z]            gravity vector
 float euler[3];         // [psi, theta, phi]    Euler angle container
 float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gravity vector
 
-	// packet structure for InvenSense teapot demo
-	uint8_t teapotPacket[14] = { '$', 0x02, 0,0, 0,0, 0,0, 0,0, 0x00, 0x00, '\r', '\n' };
+// packet structure for InvenSense teapot demo
+uint8_t teapotPacket[14] = { '$', 0x02, 0,0, 0,0, 0,0, 0,0, 0x00, 0x00, '\r', '\n' };
 
 ARPI_MPU6050::ARPI_MPU6050() {
 	
 }
 
-
-// ================================================================
-// ===               INTERRUPT DETECTION ROUTINE                ===
-// ================================================================
-
 volatile bool mpuInterrupt = false;     // indicates whether MPU interrupt pin has gone high
 void dmpDataReady() {
     mpuInterrupt = true;
 }
-
-
-
-// ================================================================
-// ===                      INITIAL SETUP                       ===
-// ================================================================
 
 int ARPI_MPU6050::setup() {
     // join I2C bus (I2Cdev library doesn't do this automatically)
@@ -125,12 +115,6 @@ int ARPI_MPU6050::setup() {
     // configure LED for output
     pinMode(LED_PIN, OUTPUT);
 }
-
-
-
-// ================================================================
-// ===                    MAIN PROGRAM LOOP                     ===
-// ================================================================
 
 void ARPI_MPU6050::run() {
     // if programming failed, don't try to do anything
