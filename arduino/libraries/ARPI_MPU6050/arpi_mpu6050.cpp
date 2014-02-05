@@ -111,9 +111,6 @@ int ARPI_MPU6050::setup() {
         Serial.print(devStatus);
         Serial.println(F(")"));
     }
-
-    // configure LED for output
-    pinMode(LED_PIN, OUTPUT);
 }
 
 void ARPI_MPU6050::run() {
@@ -240,9 +237,5 @@ void ARPI_MPU6050::run() {
             Serial.write(teapotPacket, 14);
             teapotPacket[11]++; // packetCount, loops at 0xFF on purpose
         #endif
-
-        // blink LED to indicate activity
-        blinkState = !blinkState;
-        digitalWrite(LED_PIN, blinkState);
     }
 }

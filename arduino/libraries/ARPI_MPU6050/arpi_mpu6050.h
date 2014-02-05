@@ -19,10 +19,7 @@
        #include "Wire.h"
    #endif
 
-
    #define OUTPUT_READABLE_YAWPITCHROLL
-
-   #define LED_PIN 13 // (Arduino is 13, Teensy is 11, Teensy++ is 6)
 
    class ARPI_MPU6050 {
    	public:
