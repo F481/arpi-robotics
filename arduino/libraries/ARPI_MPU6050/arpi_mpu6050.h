@@ -23,12 +23,8 @@
 
    class ARPI_MPU6050 {
    	public:
-   		ARPI_MPU6050();
    		int setup();
    		void run();
-   		float getYaw();
-   		float getPitch();
-   		float getRoll();
    };
 
 #endif
